@@ -1,4 +1,5 @@
 .container {
+    background-color: green;
     display: flex;
     width: 90vw;
     justify-content: center;
@@ -29,17 +30,26 @@
 }
 
 .panel.active {
-    flex: 0.35;
+    flex: 0.44;
 }
 
 .panel.active h3 {
     opacity: 1;
 }
+
+
 @media(max-width: 1000px) {
     .panel.active {
-        flex: 5;
+        flex: 1;
     }
 }
+@media(max-width: 600px) {
+    .panel.active {
+        flex: 3;
+    }
+}
+
+
 @media(max-width: 480px) {
     .container {
         width: 100vw;
@@ -50,9 +60,24 @@
     } 
 }
 
-@media(max-height: 800px) {
-   
+@media(max-width: 400px) {
+    .panel {
+        flex: 0.2;
+        margin: 6px;
+    }
     .panel.active {
-        flex: 0.5;
+        flex: 2;
     }
 }
+
+
+@media (max-height: 800px) and (orientation: landscape){
+    .panel.active {
+        flex: 0.45;
+    }
+    .panel {
+        flex: 0.09;
+    }
+}
+
+
