@@ -29,7 +29,7 @@
 }
 
 .panel.active {
-    flex: 0.44;
+    flex: 0.35;
 }
 
 .panel.active h3 {
