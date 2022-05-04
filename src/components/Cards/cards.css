@@ -40,11 +40,6 @@
         flex: 5;
     }
 }
-@media(max-height: 800px) {
-    .panel.active {
-        flex: 0.5;
-    }
-}
 @media(max-width: 480px) {
     .container {
         width: 100vw;
@@ -53,4 +48,13 @@
     .panel:nth-of-type(5) {
         display: none;
     } 
+}
+
+@media(max-height: 800px) {
+    .panel  {
+        flex: 0.02;
+    }
+    .panel.active {
+        flex: 0.3;
+    }
 }
